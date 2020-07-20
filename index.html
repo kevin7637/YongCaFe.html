@@ -3,53 +3,7 @@
     <head>
         <title>YongCaFe</title>
         <meta charset = "utf-8">
-        <style>
-          #grid{
-                display: grid;
-                grid-template-columns: 120px 120px 240px 240px;
-            }
-            #grid .title{
-                background-color: lightgreen;
-                /*border-bottom:1px solid black;*/
-                grid-column:1/5;
-                grid-row:1/2;
-            }
-            #grid .ol{
-                background-color: lightyellow;
-                /*border-left:1px solid black;
-                border-bottom:1px solid black;
-                width:100%;margin:0;padding:0;*/
-                grid-column:1/2;
-            }
-            #grid .ol2{
-                background-color: lightyellow;
-                /*border-left:1px solid black;
-                border-bottom:1px solid black;
-                width:100%;margin:0;padding:0;*/
-                grid-column:2/3;
-            }
-            .cafe1{
-                background-color: #E0F8F7;
-                /*border-left:1px solid black;
-                border-bottom:1px solid black;
-                width:240px;*/
-                grid-column:3/4;
-                text-align:center;
-                vertical-align: center;
-            }
-            .cafe2{
-                background-color: #E0F8F7;
-                /*border-left:1px solid black;
-                border-bottom:1px solid black;
-                border-right:1px solid black;
-                width:240px;*/
-                grid-column:4/5;
-                text-align:center;
-            }
-            a{text-decoration: none;}
-            b {color:blue;}
-            r {color:red;}
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div id="grid">
@@ -68,33 +22,12 @@
         <br>
         <div class = "text">
         메인 화면입니다 <br>
-        댓글로 추천하는 카페를 알려주세요<br>
         </div>
         <br>
         <font color = "red"><span style = "font-size:10px";> 프로그램 연습용 사이트입니다.</span> </font>
         <br>
         <br>
-        <div id="disqus_thread"></div>
-        <script>
 
-        /**
-        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-        /*
-        var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-        */
-        (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://yongcafe.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172936991-1"></script>
         <script>

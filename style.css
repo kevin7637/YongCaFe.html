@@ -1,0 +1,46 @@
+#grid{
+    display: grid;
+    grid-template-columns: 120px 120px 300px 300px;
+    grid-auto-rows: minmax(80px,auto);
+}
+#grid .title{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: lightgreen;
+    grid-column:1/5;
+    grid-row:1/2;
+}
+#grid .ol{
+    background-color: lightyellow;
+    grid-column:1/2;
+}
+#grid .ol2{
+    background-color: lightyellow;
+    grid-column:2/3;
+}
+.cafe1{
+    background-color: #E0F8F7;
+    grid-column:3/4;
+    text-align:center;
+    vertical-align: center;
+}
+.cafe2{
+    background-color: #E0F8F7;
+    grid-column:4/5;
+    text-align:center;
+}
+a{text-decoration: none;}
+b {color:blue;}
+r {color:red;}
+@media(max-width:500px) {
+    #grid{
+        display:block;
+    }
+    h3{
+        margin:0;
+    }
+    p{
+        margin:0;
+    }
+}
